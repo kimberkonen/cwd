@@ -1,2 +1,2 @@
 # CWD
-A repository for my Critical Web Design class.
+This is Kimber Konen's Github account, learning how to set up a site with Github pages.
