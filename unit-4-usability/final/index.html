@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Nordstorm Usability test</title>
+	<style>
+		body {
+     	 margin: 0;
+      	font-family: Arial, sans-serif;
+      	background-color: #b0bbbf;
+      	
+    }
+
+		h1 {
+      	text-align: center;
+      	font-size: 36px;
+      	margin-bottom: 30px;
+    }
+
+		.divider {
+      	height: 3px;
+      	background-color: #CADBC8;
+      	margin-bottom: 30px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+
+  	.task {
+	  display: flex;
+	  flex-direction: column; 
+	  gap: 15px;
+	  margin-bottom: 40px;
+
+    .task img {
+	  width: 40%%;        
+	  max-width: 100px;   
+	  border-radius: 6px;
+	  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+	}
+    }
+
+    .task-content {
+      flex: 1;
+    }
+
+    .task-content h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .task-content p {
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    .time {
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .task {
+        flex-direction: column;
+      }
+
+      .task img {
+      	width: 100%;
+      }
+    }
+
+
+
+
+	</style>
+</head>
+<body>
+
+<h1> Nordstrom Website Usability Test </h1>
+<div class="divider"></div>
+
+<div class="container">
+    
+
+    <h2>The 5 Tasks:</h2>
+    
+
+    <!-- Task 1 -->
+    <div class="task">
+      <img src="../assets/shoes.png" alt="Task 1 screenshot" length= 800px width= 400px >
+      <div class="task-content">
+        <h3>1. Find a pair of shoes on sale for a first date.</h3>
+        <p class="time">Time: 40.96 sec</p>
+        <p>The user searched for formal shoes by using sale filter and reacted that many options felt too fancy and expensive. Despite this, they selected a pair and added a size 6 medium to their cart.</p>
+        
+      </div>
+    </div>
+
+    <!-- Task 2 -->
+    <div class="task">
+      <img src="../assets/gift.png" alt="Task 2 screenshot" length= 800px width= 400px>
+      <div class="task-content">
+        <h3>2. Find a gift under $100 for a friend.</h3>
+        <p class="time">Time: 24.57 sec</p>
+        <p>The user searched for a plush item and chose a dragon, commenting positively on its appearance (“so cute”) while also noting the price.</p>
+        
+      </div>
+    </div>
+
+    <!-- Task 3 -->
+    <div class="task">
+      <img src="../assets/wall-art.png" alt="Task 3 screenshot" length= 800px width= 400px>
+      <div class="task-content">
+        <h3>3. Find the highest-priced wall art for your new house.</h3>
+        <p class="time">Time: 52.23sec</p>
+        <p>The user expressed surprise at pricing of wall art and continued browsing without using sorting filters. They scrolled through items but did not select the highest-priced options.</p>
+        
+      </div>
+    </div>
+
+ <!-- Task 4 -->
+    <div class="task">
+      <img src="../assets/wedding-dress.png" alt="Task 4 screenshot" length= 800px width= 400px>
+      <div class="task-content">
+        <h3>4. Find apparel appropriate for a Wedding.</h3>
+        <p class="time">Time: 45.12sec</p>
+        <p>The user searched for a formal dress and selected a blue option that balanced style—neither too flashy nor too plain—in size 4.</p>
+        
+      </div>
+    </div>
+
+ <!-- Task 5-->
+    <div class="task">
+      <img src="../assets/appointment.png" alt="Task 5 screenshot" length= 800px width= 400px>
+      <div class="task-content">
+        <h3>5. Book an in-store styling appointment for women at Tysons Corner. </h3>
+        <p class="time">Time: 2:20.52 min</p>
+        <p>The user attempted to verify the store location by scrolling to the footer. While there, they looked for styling services but were unable to find them immediately.</p>
+        
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+<form action="#" id="myForm">
+
+	<input type="text" id="msg" />
+	<--<input type="text" id="msg" /> -->
+
+	<button type="submit">Submit</button>
+</form>
+
+<script src="../assets/hello.js"></script>
+
+
+
+</body>
+</html>
