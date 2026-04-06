@@ -33,10 +33,14 @@
 
 
     h2 {
-      font-size: 28px;
+      font-size: 25px;
       margin-bottom: 10px;
     }
-
+ 	
+ 	h3 {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
 
   	.task {
 	  display: flex;
@@ -152,7 +156,10 @@
     </div>
 
   </div>
-
+<div class="divider"></div>
+<h1> System Usability Scale</h1>
+<h2> Enter Repsonses Based Off 1-5 </h2>
+<h3> 1 = Very Difficult / Strongly Disagree | 5 = Very Easy / Strongly Agree</h3>
 
 
 
@@ -160,10 +167,19 @@
 
 <form action="#" id="myForm">
 
-	<input type="text" id="msg" />
-	<--<input type="text" id="msg" /> -->
+	<p> The website was easy to use overall. (1–5)</p>
+  <input type="number" class="score" placeholder="Score 1"><br><br>
+  <p> The layout and navigation were intuitive. (1–5)</p>
+  <input type="number" class="score" placeholder="Score 2"><br><br>
+  <p> I was able to complete tasks quickly. (1–5)</p>
+  <input type="number" class="score" placeholder="Score 3"><br><br>
+  <p> I felt confident using the website. (1–5) </p>
+  <input type="number" class="score" placeholder="Score 4"><br><br>
+  <p> I would use this website again. (1–5) </p>
+  <input type="number" class="score" placeholder="Score 5"><br><br>
 
-	<button type="submit">Submit</button>
+  <button type="submit">Submit</button>
+
 </form>
 
 <script src="../assets/hello.js"></script>

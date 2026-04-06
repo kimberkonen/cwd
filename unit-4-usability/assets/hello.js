@@ -1,11 +1,20 @@
 let myForm= document.querySelector("#myForm");
 
-myForm.addEventListener("submit", (event) => {
+myForm.addEventListener("submit", function (event) => {
 	event.preventDefault ();
 	
-	// console.log ("hello");
+	
+let inputs = document.querySelectorAll(".score");
 
-	console.log(this.msg.value)
+  let total = 0;
+
+  inputs.forEach(input => {
+    let value = parseFloat(input.value);
+    if (!isNaN(value)) {
+      total += value;
+    }
+  });
+	console.log("total score", total)
 
 });
 
