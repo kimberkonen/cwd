@@ -54,30 +54,22 @@
 	  border-radius: 6px;
 	  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 	}
-    }
+    
 
     .task-content {
       flex: 1;
     }
 
-    .task-content h3 {
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
-
-    .task-content p {
-      line-height: 1.5;
-      margin-bottom: 10px;
-    }
+  
 
     .time {
       font-weight: bold;
     }
 
-    @media (max-width: 768px) {
+     @media (max-width: 768px) {
       .task {
         flex-direction: column;
-      }
+      } 
 
       .task img {
       	width: 100%;
@@ -103,7 +95,7 @@
     <!-- Task 1 -->
     <div class="task">
       <img src="../assets/shoes.png" alt="Task 1 screenshot" length= 800px width= 400px >
-      <div class="task-content">
+      <div class="task 1-shoes">
         <h3>1. Find a pair of shoes on sale for a first date.</h3>
         <p class="time">Time: 40.96 sec</p>
         <p>The user searched for formal shoes by using sale filter and reacted that many options felt too fancy and expensive. Despite this, they selected a pair and added a size 6 medium to their cart.</p>
@@ -114,7 +106,7 @@
     <!-- Task 2 -->
     <div class="task">
       <img src="../assets/gift.png" alt="Task 2 screenshot" length= 800px width= 400px>
-      <div class="task-content">
+      <div class="task 2-gift">
         <h3>2. Find a gift under $100 for a friend.</h3>
         <p class="time">Time: 24.57 sec</p>
         <p>The user searched for a plush item and chose a dragon, commenting positively on its appearance (“so cute”) while also noting the price.</p>
@@ -125,7 +117,7 @@
     <!-- Task 3 -->
     <div class="task">
       <img src="../assets/wall-art.png" alt="Task 3 screenshot" length= 800px width= 400px>
-      <div class="task-content">
+      <div class="task 3-wall art">
         <h3>3. Find the highest-priced wall art for your new house.</h3>
         <p class="time">Time: 52.23sec</p>
         <p>The user expressed surprise at pricing of wall art and continued browsing without using sorting filters. They scrolled through items but did not select the highest-priced options.</p>
@@ -136,7 +128,7 @@
  <!-- Task 4 -->
     <div class="task">
       <img src="../assets/wedding-dress.png" alt="Task 4 screenshot" length= 800px width= 400px>
-      <div class="task-content">
+      <div class="task 4-wedding dress">
         <h3>4. Find apparel appropriate for a Wedding.</h3>
         <p class="time">Time: 45.12sec</p>
         <p>The user searched for a formal dress and selected a blue option that balanced style—neither too flashy nor too plain—in size 4.</p>
@@ -147,7 +139,7 @@
  <!-- Task 5-->
     <div class="task">
       <img src="../assets/appointment.png" alt="Task 5 screenshot" length= 800px width= 400px>
-      <div class="task-content">
+      <div class="task 5- make apppointment">
         <h3>5. Book an in-store styling appointment for women at Tysons Corner. </h3>
         <p class="time">Time: 2:20.52 min</p>
         <p>The user attempted to verify the store location by scrolling to the footer. While there, they looked for styling services but were unable to find them immediately.</p>
@@ -156,7 +148,8 @@
     </div>
 
   </div>
-<div class="divider"></div>
+
+<div class="container">
 <h1> System Usability Scale</h1>
 <h2> Enter Repsonses Based Off 1-5 </h2>
 <h3> 1 = Very Difficult / Strongly Disagree | 5 = Very Easy / Strongly Agree</h3>
@@ -178,12 +171,12 @@
   <p> I would use this website again. (1–5) </p>
   <input type="number" class="score" placeholder="Score 5"><br><br>
 
-  <button type="submit">Submit</button>
+  <button type="submit">Submit Score</button>
 
 </form>
 
 <script src="../assets/hello.js"></script>
-
+</div>
 
 
 </body>

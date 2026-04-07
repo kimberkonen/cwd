@@ -8,12 +8,7 @@ let inputs = document.querySelectorAll(".score");
 
   let total = 0;
 
-  inputs.forEach(input => {
-    let value = parseFloat(input.value);
-    if (!isNaN(value)) {
-      total += value;
-    }
-  });
+
 	console.log("total score", total)
 
 });
