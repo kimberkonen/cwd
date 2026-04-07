@@ -16,6 +16,12 @@ this.answer.value= answer;
 console.log (answer);
 
 
+let inputs = document.querySelectorAll(".score");
+
+  let total = 0;
+
+
+	console.log("total score", total)
 
 });
 
