@@ -1,12 +1,159 @@
 <!DOCTYPE html>
+<!-- This website is a dataset about different billboard data. There are graphs on #1 tracks of 2020, the 2000's chart leaders, and te best songs from each decade-->
 <html>
 <head>
-<title>Billboard Hot 100</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Billboard Data Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<style>
+	body {
+      background-color: black;
+      color: white;
+    }
+
+    .title {
+      font-size: 58px;
+      font-weight: 800;
+      padding: 30px 0 20px 90px;
+      border-bottom: 5px solid #3AF8A6;
+      text-align: center;
+    }
+
+    .explore-box {
+      background-color: #d9d9d9;
+      border: 4px solid #3AF8A6;
+      text-align: center;
+      padding: 45px 20px 30px;
+      margin: 60px auto 45px;
+      max-width: 1125px;
+    }
+
+    .explore-box h2 {
+      font-size: 58px;
+      font-weight: 800;
+      margin-bottom: 25px;
+      color: black;
+    }
+
+    .chart-button {
+      background-color: #3AF8A6;
+      border: none;
+      padding: 12px 50px;
+      font-size: 30px;
+      font-weight: 700;
+      color: white;
+    }
+
+    .chart-button:hover {
+      background-color: #09EC8A;
+    }
+
+    .info-box {
+	  background-color: #d9d9d9;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	  font-size: 20px;
+	  font-weight: 800;
+	  text-align: center;
+	  color: black;
+	  border: 4px solid #3AF8A6;
+	  padding: 15px;
+	  min-height: 250px; 
+
+}
+    .flourish-embed {
+  		width: 100%;
+		}
+
+    .chart-title {
+      font-size: 32px;
+      font-weight: 800;
+      text-align: center;
+      margin: 20px 0;
+      border-bottom: 2px solid #3AF8A6;
+
+    }
+
+    
+    .chart-area {
+      display: flex;
+      justify-content: center;
+    }
+
+</style>
+	
+
 </head>
 <body>
 
-<h1>Billboard Hot 100 Full History</h1>
-<p>This is a paragraph.</p>
+<h1 class="title">Billboard Hot 100 Data Dashboard</h1>
 
+  <div class="container">
+
+    <div class="explore-box">
+      <h2>Explore the greatest hits in Billboard history!</h2>
+      <button class="chart-button">Browse the Charts!</button>
+    </div>
+
+
+   <h1 class="chart-title">#1 Tracks of 2020</h1>
+    
+
+<!--I asked AI how to center the chart-->
+
+      <div class="row justify-content-center">
+            <div class="col-8 text-center">
+                <div class="flourish-embed flourish-chart center" data-src="visualisation/28671236"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28671236/thumbnail" width="100%" alt="top tracks of 2020" /></noscript></div>
+            </div>
+        </div>
+
+
+
+
+    <div class="row justify-content-between mb-4">
+      <div class="col-md-4">
+        <div class="info-box flex-column">
+        	<span> 2000s CHART KINGS </span>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/28707265">
+      <script src="https://public.flourish.studio/resources/embed.js"></script>
+      <noscript>
+        <img src="https://public.flourish.studio/visualisation/28707265/thumbnail" width="100%" alt="2000's chart leaders" />
+      </noscript>
+    </div>
+		</div>
+      </div>
+
+ <div class="col-md-4">
+        <div class="info-box flex-column">
+        	<span> GENRES </span>
+ 			<img src="../assets/record.gif" class="img-fluid mb-2" alt="Record Gif">
+    
+        </div>
+      </div>
+ 
+
+
+      <div class="col-md-4">
+        <div class="info-box flex-column">
+        	<span>THE SOUNDS OF EACH DECADE </span>
+      <div class="flourish-embed flourish-hierarchy" data-src="visualisation/28707553"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28707553/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
+      </div>
+  </div>
+
+ </div>
+   
+
+  </div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
-</html
+</html>
+
